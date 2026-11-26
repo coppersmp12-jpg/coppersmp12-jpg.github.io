@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090711">
+  <title>VOID SMP — Enter the Void</title>
+  <style>
+    :root{--bg:#090711;--panel:#151122;--purple:#9b5cff;--pink:#d65cff;--text:#f7f2ff;--muted:#aaa1ba}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 50% -15%,#38205c 0,transparent 48%),var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:55px 55px;mask-image:linear-gradient(to bottom,#000,transparent 80%)}
+    a{color:inherit;text-decoration:none}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;max-width:1120px;padding:0 24px;margin:auto;position:relative;z-index:2}
+    .brand{font-weight:900;letter-spacing:3px;font-size:20px}.brand span{color:var(--purple)}
+    .nav a:last-child{border:1px solid #68419b;border-radius:999px;padding:11px 18px;font-size:13px;font-weight:800}
+    .hero{min-height:690px;display:grid;place-items:center;text-align:center;padding:80px 22px 110px;position:relative}
+    .orb{position:absolute;width:360px;height:360px;border-radius:50%;background:#8c36ff;filter:blur(130px);opacity:.2;top:110px;left:calc(50% - 180px);animation:pulse 5s ease-in-out infinite}
+    @keyframes pulse{50%{transform:scale(1.25);opacity:.32}}
+    .hero-inner{position:relative;max-width:850px}
+    .tag{display:inline-block;border:1px solid #64428b;background:#211431aa;color:#d9bdff;border-radius:999px;padding:8px 14px;font-size:11px;font-weight:800;letter-spacing:2px}
+    h1{font-size:clamp(58px,11vw,112px);line-height:.95;letter-spacing:-5px;margin:28px 0 18px;font-weight:1000;text-shadow:0 0 45px #9b5cff55}
+    h1 span{background:linear-gradient(90deg,#fff,#c69aff 55%,#a24dff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .subtitle{color:var(--muted);font-size:18px;line-height:1.7;max-width:600px;margin:0 auto 30px}
+    .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;padding:15px 22px;font-weight:900;font-size:14px;transition:.2s;cursor:pointer;border:1px solid #61418a;background:#1a1428}
+    .btn.primary{background:linear-gradient(100deg,#8b45ed,#bd55ff);border:0;box-shadow:0 8px 35px #8b45ed55}
+    .btn:hover{transform:translateY(-3px);filter:brightness(1.15)}
+    .section{max-width:1080px;margin:auto;padding:55px 24px 90px;position:relative}
+    .eyebrow{text-align:center;color:#bd8cff;font-size:11px;letter-spacing:3px;font-weight:900}
+    h2{text-align:center;font-size:clamp(30px,5vw,46px);margin:12px 0 38px;letter-spacing:-1px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:linear-gradient(145deg,#1b1529,#100d19);border:1px solid #302340;border-radius:18px;padding:26px;min-height:180px}
+    .icon{font-size:27px}.card h3{margin:17px 0 9px}.card p{margin:0;color:var(--muted);line-height:1.6;font-size:14px}
+    .join{background:linear-gradient(120deg,#24143b,#151022);border:1px solid #53347a;border-radius:24px;padding:42px 25px;text-align:center}
+    .join p{color:var(--muted);line-height:1.6}
+    .serverbox{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:24px auto 0}
+    code{background:#090711;border:1px solid #3c2b50;border-radius:10px;padding:14px 18px;color:#d9bdff;font-size:14px}
+    footer{text-align:center;color:#766d86;padding:28px 15px;border-top:1px solid #21192e;font-size:12px}
+    @media(max-width:700px){.cards{grid-template-columns:1fr}.hero{min-height:620px}h1{letter-spacing:-3px}.nav{height:66px}}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">VOID<span>.</span> SMP</div>
+    <a href="https://discord.gg/QfqCet5cE" target="_blank" rel="noopener">JOIN DISCORD ↗</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="orb"></div>
+      <div class="hero-inner">
+        <div class="tag">MINECRAFT LIFESTEAL • JAVA EDITION</div>
+        <h1>ENTER THE<br><span>VOID.</span></h1>
+        <p class="subtitle">Fight. Survive. Steal hearts. Every battle matters — are you ready to enter the Void?</p>
+        <div class="actions">
+          <a class="btn primary" href="https://discord.gg/QfqCet5cE" target="_blank" rel="noopener">JOIN OUR DISCORD</a>
+          <a class="btn" href="#about">DISCOVER THE SERVER</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="eyebrow">YOUR NEXT ADVENTURE</div>
+      <h2>MORE THAN SURVIVAL.</h2>
+      <div class="cards">
+        <article class="card"><div class="icon">🖤</div><h3>LifeSteal</h3><p>Defeat your enemies, steal their hearts and fight to stay alive.</p></article>
+        <article class="card"><div class="icon">⚔️</div><h3>Real PvP</h3><p>Gear up, make allies and prove that you belong at the top.</p></article>
+        <article class="card"><div class="icon">🌌</div><h3>Your Story</h3><p>Build your base, create your team and make your mark on the server.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="join">
+        <div class="eyebrow">THE VOID IS WAITING</div>
+        <h2>READY TO JOIN?</h2>
+        <p>Java Edition · Minecraft 1.21.11</p>
+        <div class="serverbox">
+          <code id="serverip">DEINE-SERVER-IP</code>
+          <button class="btn" onclick="copyIP()">COPY IP</button>
+        </div>
+        <p id="copymsg" aria-live="polite">Replace “DEINE-SERVER-IP” in the website file with your real server address.</p>
+        <a class="btn primary" href="https://discord.gg/QfqCet5cE" target="_blank" rel="noopener">JOIN DISCORD ↗</a>
+      </div>
+    </section>
+  </main>
+  <footer>© 2026 VOID SMP · Made for the community</footer>
+  <script>
+    function copyIP(){
+      const ip=document.getElementById('serverip').textContent.trim();
+      const msg=document.getElementById('copymsg');
+      if(ip==='DEINE-SERVER-IP'){msg.textContent='Add your real server IP to the HTML file first.';return;}
+      navigator.clipboard.writeText(ip).then(()=>msg.textContent='Server IP copied!').catch(()=>msg.textContent='Copy the IP manually: '+ip);
+    }
+  </script>
+</body>
+</html>
